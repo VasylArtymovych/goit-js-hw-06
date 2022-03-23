@@ -10,7 +10,7 @@ function onFormSubmit(event) {
 
     if (email === '' || password === '') {
         alert('Fill in all input fields!!!')
-    }
+    };
 
     const formData = new FormData(event.currentTarget);
     formData.forEach((value, name) => {
