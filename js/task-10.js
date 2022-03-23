@@ -26,7 +26,6 @@ function creatBoxes(inputValue) {
 
   for (let i = 1; i <= inputValue; i += 1){
   const box = document.createElement('div');
-  box.setAttribute('style', 'width');
   box.style.width = listWidthHeigth[0] + 'px';
   box.style.height = listWidthHeigth[1] + 'px';
   box.style.backgroundColor = getRandomHexColor();
@@ -34,7 +33,6 @@ function creatBoxes(inputValue) {
     refs.parentBox.append(box);
     listWidthHeigth[0] += 10;
     listWidthHeigth[1] += 10;
-    console.log(box);
   }
   refs.parentBox.append(...arrOfBoxes);
 };
