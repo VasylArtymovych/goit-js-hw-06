@@ -35,6 +35,6 @@ function creatBoxes(inputValue) {
     listWidthHeigth[1] += 10;
   }
   refs.parentBox.append(...arrOfBoxes);
-};
+}
 
 
