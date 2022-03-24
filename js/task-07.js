@@ -3,9 +3,10 @@ const refs = {
     text: document.querySelector("#text")
 }
 
+refs.text.style.fontSize = refs.inputRange.value + 'px';
+
 refs.inputRange.addEventListener('input', event => {
     let range = event.currentTarget.value;
 
     refs.text.style.fontSize = range + 'px';
-
 })

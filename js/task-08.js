@@ -9,13 +9,14 @@ function onFormSubmit(event) {
     const password = event.currentTarget.elements.password.value;
 
     if (email === '' || password === '') {
-        alert('Fill in all input fields!!!')
+        return alert('Fill in all input fields!!!');
     };
 
     const formData = new FormData(event.currentTarget);
+    const arrFormData = []
     formData.forEach((value, name) => {
-        console.log(`${name}:`, value);
+        arrFormData.push({ [name]: value });
     });
-
+    console.log(arrFormData);
     event.currentTarget.reset();
 }
