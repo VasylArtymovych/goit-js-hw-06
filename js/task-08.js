@@ -14,9 +14,12 @@ function onFormSubmit(event) {
 
     const formData = new FormData(event.currentTarget);
     const arrFormData = []
+
     formData.forEach((value, name) => {
         arrFormData.push({ [name]: value });
     });
+
     console.log(arrFormData);
+    
     event.currentTarget.reset();
 }
