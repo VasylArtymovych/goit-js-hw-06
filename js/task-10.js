@@ -28,8 +28,8 @@ function creatBoxes(inputValue) {
     let color = getRandomHexColor();
     
     const box = document.createElement('div');
-  box.style.width = listWidthHeigth[0] + 'px';
-  box.style.height = listWidthHeigth[1] + 'px';
+    box.style.width = listWidthHeigth[0] + 'px';
+    box.style.height = listWidthHeigth[1] + 'px';
     box.style.backgroundColor = color;
     arrOfBoxes.push(box);
     listWidthHeigth[0] += 10;

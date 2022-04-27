@@ -5,10 +5,9 @@ formRef.addEventListener('submit', onFormSubmit);
 function onFormSubmit(event) {
     event.preventDefault();
     
-    const email = event.currentTarget.elements.email.value;
-    const password = event.currentTarget.elements.password.value;
+    const {elements:{email, password}} = event.currentTarget;
 
-    if (email === '' || password === '') {
+    if (email.value === '' || password.value === '') {
         return alert('Fill in all input fields!!!');
     };
 
